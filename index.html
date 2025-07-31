@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Friendship Day</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Password Screen -->
+  <div id="lockScreen">
+    <h1>🔒 Enter Password</h1>
+    <input type="password" id="passwordInput" placeholder="Enter password..." />
+    <button onclick="checkPassword()">Unlock</button>
+    <p id="hint" class="hidden">Hint: what are we?</p>
+  </div>
+
+  <!-- Surprise Page (Hidden until correct password) -->
+  <div id="mainContent" class="hidden">
+
+    <canvas id="starsCanvas"></canvas>
+    <div id="petals-container"></div>
+    <div class="heart-container"></div>
+
+    <div class="container">
+      <h1 class="typewriter">Happy Friendship Day, Aashish!</h1>
+      <div class="images">
+        <img src="images/photo1.jpg" alt="Memory 1"/>
+        <img src="images/photo2.jpg" alt="Memory 2"/>
+      </div>
+
+      <p class="message">I miss our endless talking in school. This adulting kinda sucks — we barely get time to meet and talk.</p>
+
+      <div class="marquee">Still silly. Still supportive. Still chaotic. Still deep. Still us. 💫</div>
+
+      <button onclick="launchConfetti()">🎉 Tap for a blast!</button>
+
+      <div class="easter">
+        <strong id="easterEgg" onclick="triggerEasterEgg()">Uss dude uss!</strong>
+        <span id="miniMessage" class="hidden">💬 Still chaotic. Still us.</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
